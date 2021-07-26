@@ -1,0 +1,78 @@
+.wrap_icons_link {
+    width: 320px;
+    height: 45px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.about_icon {
+    width: 47px;
+    height: 47px;
+    margin-top: 35px;
+    cursor: pointer;
+}
+.about_icon_name {
+    /* background: url(../../img/icons/icons_about/YG.png) 47% center no-repeat;
+    background-size: 100% auto; */
+    border-radius: 50%;
+    background-color: #BCBCBC;
+    text-align: center;
+    font-size: 28px;
+    line-height: 56px;
+    vertical-align: middle;
+    color: #fff;
+    border: 1px solid #BCBCBC;
+}
+.about_icon_mail {
+    background: url(../../img/icons/icons_about/e-mail.png) 47% center no-repeat;
+    background-size: 100% auto;
+}
+.about_icon_facebook {
+    background: url(../../img/icons/icons_about/Face.png) 47% center no-repeat;
+    background-size: 100% auto;
+}
+.about_icon_insta {
+    background: url(../../img/icons/icons_about/inst.png) 47% center no-repeat;
+    background-size: 100% auto;
+}
+.about_icon_vk {
+    background: url(../../img/icons/icons_about/vk.png) 47% center no-repeat;
+    background-size: 100% auto;
+}
+.about_icon_name:hover {
+    /* background: url(../../img/icons/icons_about/YG_hover.png) 47% center no-repeat;
+    background-size: 100% auto; */
+    background-color: #fff;
+    color:  #BCBCBC;
+}
+.about_icon_mail:hover  {
+    background: url(../../img/icons/icons_about/e-mail_hover.png) 47% center no-repeat;
+    background-size: 100% auto;
+}
+.about_icon_facebook:hover  {
+    background: url(../../img/icons/icons_about/Face_hover.png) 47% center no-repeat;
+    background-size: 100% auto;
+}
+.about_icon_insta:hover  {
+    background: url(../../img/icons/icons_about/inst_hover.png) 47% center no-repeat;
+    background-size: 100% auto;
+}
+.about_icon_vk:hover  {
+    background: url(../../img/icons/icons_about/vk_hover.png) 47% center no-repeat;
+    background-size: 100% auto;
+}
+@media (max-width: 885px){
+    .wrap_icons_link {
+        width: 180px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .about_icon {
+        margin-top: 10px;
+    }
+    .about_icon_insta,
+    .about_icon_vk{
+        margin-top: 0;
+    }
+}

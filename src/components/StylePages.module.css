@@ -1,0 +1,110 @@
+.main {
+    width: 100%;
+    background-color: #000;
+    overflow-y: auto;
+    /* кастомный скролл для браузера мозила */
+    scrollbar-color: #86775a #000;
+    scrollbar-width:  thin;
+}
+.main::-webkit-scrollbar {
+    width: 8px;
+    background-color: #000;
+}
+.main::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: #86775a;
+}
+
+.about {
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    /* кастомный скролл для браузера мозила */
+    scrollbar-color: #ffffff #BCBCBC;
+    scrollbar-width:  thin;
+}
+.about::-webkit-scrollbar {
+    width: 8px;
+    background-color: #ffffff;
+}
+.about::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: #BCBCBC;
+}
+.about_photo {
+    width: 1280px;
+    display: block;
+    margin: 0 auto;
+}
+.about_text {
+    width: 635px;
+    margin: 40px auto 100px auto;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 1.3px;
+    font-style: italic;
+    color: #707070;
+    text-align: justify;
+}
+.block_links {
+    width: 170px;
+    height: 10px;
+    margin: 0 auto 100px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_about {
+    width: 100%;
+    height: 110px;
+    border-top: 2px solid #BCBCBC;
+}
+.address_about {
+    margin-top: 24px;
+}
+.address_about > span {
+    display: block;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-size: 13px;
+    color: #595959;
+    line-height: 21px;
+    letter-spacing: 1.5px;
+}
+.wrap_link_project {
+    width: 20px;
+    text-align: center;
+}
+@media (max-width: 1280px){
+    .about_photo {
+        width: 100%;
+    }
+}
+@media (max-width: 885px){
+    .about_photo {
+        width: 100%;
+    }
+    .about_text {
+        width: 470px;
+        margin: 40px auto 80px auto;
+    }
+}
+@media (max-width: 480px){
+    .footer_about {
+        height:50px;
+    }
+    .address_about {
+        margin-top: 6px;
+    }
+    .address_about > span {
+        font-size: 8px;
+        line-height: 16px;
+        letter-spacing: 1.5px;
+    }
+    .about_text {
+        width: calc(100% - 20px);
+        margin: 40px auto 80px auto;
+    }
+}

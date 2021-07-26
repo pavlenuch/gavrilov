@@ -1,0 +1,39 @@
+footer {
+    width: 100%;
+    height: 220px;
+}
+.wrap_footer_nav {
+    height: 110px;
+    border-bottom: 2px solid #716246;
+}
+address {
+    margin-top: 24px;
+}
+address > span {
+    display: block;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-size: 13px;
+    color: #86775a;
+    line-height: 21px;
+    letter-spacing: 1.5px;
+}
+@media (max-width: 885px){
+    .wrap_footer_nav {
+        height: 130px;
+    }
+}
+@media (max-width: 480px){
+    footer {
+        height: 190px;
+    }
+    address {
+        margin-top: 6px;
+    }
+    address > span {
+        font-size: 8px;
+        line-height: 16px;
+        letter-spacing: 1.5px;
+    }
+}
