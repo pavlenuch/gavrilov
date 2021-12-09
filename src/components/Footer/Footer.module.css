@@ -21,13 +21,13 @@ address > span {
 }
 @media (max-width: 885px){
     .wrap_footer_nav {
-        height: 130px;
+        height: 80px;
+    }
+    footer {
+        height: 145px;
     }
 }
 @media (max-width: 480px){
-    footer {
-        height: 190px;
-    }
     address {
         margin-top: 6px;
     }

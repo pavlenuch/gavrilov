@@ -40,7 +40,8 @@
     width: 635px;
     margin: 40px auto 100px auto;
     font-family: 'Oswald', sans-serif;
-    font-size: 16px;
+    font-size: 17px;
+    font-weight: 200;
     line-height: 20px;
     letter-spacing: 1.3px;
     font-style: italic;
@@ -93,7 +94,7 @@
 }
 @media (max-width: 480px){
     .footer_about {
-        height:50px;
+        height:60px;
     }
     .address_about {
         margin-top: 6px;

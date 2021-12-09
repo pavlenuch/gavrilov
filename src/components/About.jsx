@@ -1,11 +1,12 @@
 import React from "react"
 import HeaderAbout from "./HeaderAbout/HeaderAbout"
 import photo from '../img/aboutphoto.png'
-import text from '../img/abouttext.png'
 import { NavLink } from "react-router-dom"
-import arrow from '../img/nazad.png'
 import state from '../state'
 import s from './StylePages.module.css'
+import Back from "./NavComponents/Back"
+import Next from "./NavComponents/Next"
+import Home from "./NavComponents/Home"
 
 const About = () => {
     return (
@@ -23,11 +24,15 @@ const About = () => {
             With great interest and attention I relate to all offers.
             Nice to meet you, and commonwealth. Sincerely, Jan Gavrilov.</p>
             <div className={s.block_links}>
-                <NavLink to='/'><img src={arrow} alt="icon back" /></NavLink>
+                <NavLink to={{
+                    pathname: `/project/${state[state.length-1].folder}`,
+                    response: state[state.length-1]
+                }}> <Back /> </NavLink>
+                <NavLink to='/'> <Home /> </NavLink>
                 <NavLink to={{
                     pathname: `/project/${state[0].folder}`,
                     response: state[0]
-                }}><img src={arrow} alt="icon next" /></NavLink>
+                }}> <Next /> </NavLink>
             </div>
             <footer className={s.footer_about}>
                 <address className={s.address_about} id="address">

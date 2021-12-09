@@ -23,7 +23,9 @@ h2 {
     text-align: center;
 }
 .project_title_img {
-    width: 100%;
+    width: 900px;
+    display: block;
+    margin: 0 auto;
 }
 .project_text {
     width: 630px;
@@ -36,7 +38,7 @@ h2 {
     text-align: justify;
 }
 .project_img {
-    width: 1280px;
+    width: 900px;
     display: block;
     margin: 0 auto 10px auto;
     border: 1px solid #b9b9b85b;
@@ -84,6 +86,9 @@ h2 {
     .project_text {
         width: 470px;
     }
+    .project_title_img {
+        width: 100%;
+    }
 }
 @media (max-width: 480px){
     .project_text {
@@ -91,7 +96,7 @@ h2 {
         margin: 40px auto 80px auto;
     }
     .footer_about {
-        height:50px;
+        height: 60px;
     }
     .address_about {
         margin-top: 6px;
@@ -104,5 +109,8 @@ h2 {
     .about_text {
         width: calc(100% - 20px);
         margin: 40px auto 80px auto;
+    }
+    .footer_project {
+        margin-top: 50px;
     }
 }
